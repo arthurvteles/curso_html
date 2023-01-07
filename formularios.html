@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viweport" content="width = device-width" , initial-scale=1.0>
+    <style>
+        button {
+            cursor: pointer;
+        }
+
+        .checkbox {
+            cursor: pointer;
+        }
+
+        .emprego {
+            cursor: pointer;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <form action="#" method="get">
+        <p>
+            <label for="name_client">Nome:
+                <input type="text" id="name_client" name="name_client" placeholder="Digite seu nome" required>
+            </label>
+        </p>
+
+
+
+        <div id="profissao">Profissão:<br>
+
+            <label for="fullstack" id="checkbox_id"> Full-stack dev
+                <input type="checkbox" class="checkbox" id="fullstack" name="fullstack" value="yes"><br>
+            </label>
+
+            <label for="frontend" id="checkbox_id"> Front-end dev
+                <input type="checkbox" class="checkbox" id="frontend" name="frontend" value="yes"><br>
+            </label>
+
+            <label for="backend" id="checkbox_id"> Back-end dev
+                <input type="checkbox" class="checkbox" id="backend" name="backend" value="yes"><br>
+            </label>
+        </div>
+
+        <br>
+        <div id="Trabalhando">Está Trabalhando atualmente: <br>
+            <label for="vinculo_empregaticio">Sim
+                <input type="radio" name="vinculo_empregaticio" class="emprego" value="yes"><br>
+            </label>
+
+            <label for="vinculo_empregaticio">Não
+                <input type="radio" name="vinculo_empregaticio" class="emprego" value="no"><br>
+                </radio>
+        </div>
+
+        <br>
+        <div id="Data_nascimento">Data de nascimento: <br>
+            <label for="data_nascimento">
+                <input type="date">
+            </label>
+        </div>
+
+        <br>
+        <div id="email"> Digite seu e-mail: <br>
+            <label>
+                <input type="email" name="email_usuario" placeholder="ex: email@email.com   "><br>
+            </label>
+        </div>
+
+        <br>
+        <div id="curriculo">Envie seu currículo: <br>
+            <label>
+                <input type="file" name="curriculo" accept=".pdf, .docx">
+            </label>
+        </div>
+
+        <br>
+        <div id="Número de telefone">Digite o número de telefone:<br>
+            <label>
+                <input type="number" name="numero_telefone">
+            </label>
+        </div>
+
+        <p>
+            <button type="sumbit">Enviar</button>
+            <button type="reset">Reset</button>
+        </p>
+    </form>
+
+</body>
+
+</html>
